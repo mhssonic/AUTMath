@@ -17,10 +17,11 @@ public class AUTMath {
      * subtraction operator
      * @param num1 operand
      * @param num2 operand
-     * @return the positive difference of the parameters.
+     * @return the result of subtracting the second parameter from the first.
      */
     public static int subtract(int num1, int num2) {
-        return num1 - num2;
+        int result = num1 - num2;
+        return Math.abs(result);
     }
 
     /**
