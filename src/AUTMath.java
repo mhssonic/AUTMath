@@ -53,7 +53,11 @@ public class AUTMath {
      * @return the factorial of the passed in parameter
      */
     public static int factorial(int number) {
-        return number * factorial(number -1);
+        if (number == 0) {
+            return number;
+        } else {
+            return number * factorial(number - 1);
+        }
     }
 
     /**
